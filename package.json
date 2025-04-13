@@ -1,0 +1,36 @@
+{
+  "name": "typescript-template",
+  "version": "1.0.0",
+  "description": "A clean TypeScript starter template for Node.js projects.",
+  "main": "index.js",
+  "scripts": {
+    "build": "rimraf ./dist && npx tsc",
+    "start": "npm run build && node ./dist/index.js",
+    "dev": "npx nodemon",
+    "lint": "npx eslint",
+    "lint:fix": "npx eslint --fix"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@types/node": "^22.14.0",
+    "typescript": "^5.8.3"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.24.0",
+    "@swc/core": "^1.11.18",
+    "@swc/helpers": "^0.5.15",
+    "@types/node-telegram-bot-api": "^0.64.8",
+    "@typescript-eslint/eslint-plugin": "^8.29.1",
+    "@typescript-eslint/parser": "^8.29.1",
+    "dotenv": "^16.4.7",
+    "eslint": "^9.24.0",
+    "eslint-config-prettier": "^10.1.1",
+    "eslint-plugin-import": "^2.31.0",
+    "eslint-plugin-prettier": "^5.2.6",
+    "globals": "^16.0.0",
+    "node-telegram-bot-api": "^0.66.0",
+    "nodemon": "^3.1.9",
+    "rimraf": "^6.0.1",
+    "ts-node": "^10.9.2"
+  }
+}

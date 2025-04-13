@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "target": "ES5",
+    "lib": ["ES5"],
+    "module": "CommonJS",
+    "rootDir": "./src",
+    "baseUrl": "./src",
+    "resolveJsonModule": true,
+    "downlevelIteration": true,
+    "allowJs": true,
+    "sourceMap": true,
+    "outDir": "./dist",
+    "removeComments": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "noImplicitAny": true,
+    "skipLibCheck": true,
+  },
+  "ts-node": {
+    "swc": true
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules"],
+}
