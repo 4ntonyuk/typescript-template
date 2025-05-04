@@ -3,10 +3,11 @@
   "version": "1.0.0",
   "description": "A clean TypeScript starter template for Node.js projects.",
   "main": "index.js",
+  "type": "commonjs",
   "scripts": {
-    "build": "rimraf ./dist && npx tsc",
-    "start": "npm run build && node ./dist/index.js",
-    "dev": "npx nodemon",
+    "build": "npx rimraf ./dist && npx tsc",
+    "start": "npm run build && NODE_ENV=prod node -r module-alias/register ./dist/app.js",
+    "dev": "NODE_ENV=dev npx nodemon",
     "lint": "npx eslint",
     "lint:fix": "npx eslint --fix"
   },
@@ -28,9 +29,14 @@
     "eslint-plugin-import": "^2.31.0",
     "eslint-plugin-prettier": "^5.2.6",
     "globals": "^16.0.0",
+    "module-alias": "^2.2.3",
     "node-telegram-bot-api": "^0.66.0",
     "nodemon": "^3.1.9",
     "rimraf": "^6.0.1",
-    "ts-node": "^10.9.2"
+    "ts-node": "^10.9.2",
+    "tsconfig-paths": "^4.2.0"
+  },
+  "_moduleAliases": {
+    "@": "./dist"
   }
 }
