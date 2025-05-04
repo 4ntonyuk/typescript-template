@@ -5,6 +5,11 @@
 
 A clean TypeScript starter template for Node.js projects.
 
+## Ready-to-Use Essentials
+- **Zero-config path aliases** - `@/` prefix automatically points to `src/` directory
+- **Strict TypeScript** - Pre-configured with recommended compiler options
+- **Production-grade setup** - Optimized build pipeline out of the box
+
 ## Quick Start
 #### 1. Clone the repository
   ```bash
