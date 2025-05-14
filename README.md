@@ -26,7 +26,7 @@ A clean TypeScript starter template for Node.js projects.
   ```
 #### 3. Run in development mode
   ```bash
-  npm dev
+  npm run dev
   # or
   pnpm dev
   # or
